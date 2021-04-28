@@ -1,0 +1,136 @@
+html {
+    height: 100%;
+}
+
+body.body {
+// margin: 50px;
+
+  background:
+  
+  repeating-linear-gradient(
+		to top left,
+		transparent,
+		transparent 5em,
+		#96526B 5em,
+		#96526B 10em,
+		transparent 10em,
+		transparent 15em,
+		#F5CF66 15em,
+		#F5CF66 20em
+	),
+	repeating-linear-gradient(
+		to top right,
+		transparent,
+		transparent 5em,
+		#EBAD60 5em,
+		#EBAD60 10em,
+		transparent 10em,
+		transparent 15em,
+		#8BAB8D 15em,
+		#8BAB8D 20em
+	), wheat;
+
+background-blend-mode: multiply;
+  
+}
+.card {
+    background:
+        radial-gradient(
+            khaki 40px,
+            transparent 0,
+            transparent 100%
+        ),
+        radial-gradient(
+            skyblue 40px,
+            transparent 0,
+            transparent 100%
+        ),
+        radial-gradient(
+            pink 40px,
+            transparent 0,
+            transparent 100%
+        ), snow;
+    background-blend-mode: multiply;
+    background-size: 100px 100px;
+    background-position: 0 0, 33px 33px, -33px -33px;
+}
+.note-editor {
+    background-color: white;
+}
+option:not(:checked), .dropdown_blade
+{
+  color: white;
+  background: rosybrown;
+  
+}
+li.list-group-item, nav.navbar, .dropdown-menu, .form-control:hover, .dropdown_blade:hover  {
+    background:
+	linear-gradient(
+		limegreen,
+		transparent
+	),
+	linear-gradient(
+		90deg,
+		skyblue,
+		transparent
+	),
+	linear-gradient(
+		-90deg,
+		coral,
+		transparent
+	);
+    
+    background-blend-mode: screen;
+}
+	
+.text-danger {
+    font-weight:900;
+}
+
+.list-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__buttons {
+        display: flex;
+        &>* {
+            margin: 5px;
+        }
+    }
+    &__company {
+            display: flex;
+            flex-direction: column;
+            &__customer {
+                font-weight: bold;
+            }
+            &__type {
+                color: gray;
+                font-size: 100%;
+                font-style: italic;
+            }
+        }
+        &_label {
+            font-family: "Nunito", sans-serif;
+            font-size: 0.9rem;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #212529;
+            
+        }
+    }
+   
+    .make-inline{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        select {
+            margin: 0 12px;
+        }
+        &.form-group {
+            margin-bottom: 0;
+        }
+    }
+.sort {
+    padding-left: 30px;
+    float: right;
+}
